@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Climate Justice Researcher & Writer</title>
+    <title>David Sathuluri - Researcher & Writer</title>
     <style>
         :root {
             --color-primary: #1a7f8e;
@@ -55,7 +55,7 @@
         .subtitle {
             font-size: 1.1rem;
             color: var(--color-text-light);
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto 20px;
             line-height: 1.8;
         }
@@ -127,83 +127,6 @@
             font-weight: 400;
         }
 
-        /* Featured Work Grid */
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .work-item {
-            background: var(--color-bg);
-            border: 1px solid var(--color-border);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .work-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .work-image {
-            width: 100%;
-            height: 200px;
-            background-color: var(--color-bg-secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-text-light);
-            font-size: 0.9rem;
-        }
-
-        .work-content {
-            padding: 25px;
-        }
-
-        .work-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--color-text);
-        }
-
-        .work-description {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .work-meta {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-        }
-
-        .work-tag {
-            background-color: var(--color-bg-secondary);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            color: var(--color-text);
-        }
-
-        .work-link {
-            color: var(--color-primary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-
-        .work-link:hover {
-            color: var(--color-accent);
-        }
-
         /* About Section */
         .about-content {
             max-width: 800px;
@@ -214,37 +137,6 @@
 
         .about-content p {
             margin-bottom: 20px;
-        }
-
-        /* Awards Section */
-        .awards-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .award-item {
-            border-left: 3px solid var(--color-primary);
-            padding: 20px 0 20px 30px;
-            margin-bottom: 30px;
-        }
-
-        .award-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--color-text);
-        }
-
-        .award-org {
-            color: var(--color-primary);
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        .award-description {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            line-height: 1.6;
         }
 
         /* Publications List */
@@ -291,602 +183,76 @@
             line-height: 1.6;
         }
 
-        /* Footer */
-        footer {
-            background-color: var(--color-bg-secondary);
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .footer-links {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
+        .form-group {
             margin-bottom: 20px;
-            flex-wrap: wrap;
         }
 
-        .footer-links a {
-            color: var(--color-primary);
-            text-decoration: none;
-            transition: color 0.3s ease;
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--color-text);
         }
 
-        .footer-links a:hover {
-            color: var(--color-accent);
-        }
-
-        footer p {
-            color: var(--color-text-light);
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            nav ul {
-                gap: 20px;
-                padding: 12px 0;
-            }
-
-            .work-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 40px 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p class="subtitle">Data journalist and reporter based in New York City. Master's in Data Journalism from Columbia University. Reported on human rights, climate change, politics, and more for The Guardian, New Lines Magazine, The New Humanitarian, and The Diplomat.</p>
-            <div class="header-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="resume.pdf" target="_blank">Resume/CV</a>
-            </div>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#featured">Featured Work</a></li>
-            <li><a href="#investigations">Investigations</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Recognition</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
-
-    <section id="featured">
-        <div class="container">
-            <h2>Featured Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-image">Data Journalism</div>
-                    <div class="work-content">
-                        <h3 class="work-title">New Jersey Superfund Sites Investigation</h3>
-                        <p class="work-description">NJ has the highest number of superfund sites in the U.S., many containing uncontrolled toxic wastes exposing residents.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Python/Pandas</span>
-                            <span class="work-tag">Data Visualization</span>
-                            <span class="work-tag">Environmental Justice</span>
-                        </div>
-                        <a href="#" class="work-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-image">Human Rights</div>
-                    <div class="work-content">
-                        <h3 class="work-title">Baloch Enforced Disappearances</h3>
-                        <p class="work-description">Amid decades of enforced disappearances, Baloch families march for justice. Data-driven investigation for Kontinentalist.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Data Scraping</span>
-                            <span class="work-tag">R</span>
-                            <span class="work-tag">Human Rights</span>
-                        </div>
-                        <a href="#" class="work-link">Read Story →</a>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-image">Policy Analysis</div>
-                    <div class="work-content">
-                        <h3 class="work-title">Trump's USAID Funding Cuts</h3>
-                        <p class="work-description">President Trump's drastic cuts to USAID funding jeopardize global aid, sparking international controversy.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Python</span>
-                            <span class="work-tag">Data Visualization</span>
-                            <span class="work-tag">Policy</span>
-                        </div>
-                        <a href="#" class="work-link">View Analysis →</a>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-image">Conflict Mapping</div>
-                    <div class="work-content">
-                        <h3 class="work-title">India-Pakistan Kashmir Tensions</h3>
-                        <p class="work-description">Mapping the dramatic flare-up between nuclear countries sparked by deadly attack on Hindu tourists in Kashmir.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Mapbox</span>
-                            <span class="work-tag">Storytelling</span>
-                            <span class="work-tag">Geopolitics</span>
-                        </div>
-                        <a href="#" class="work-link">Explore Map →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="investigations">
-        <div class="container">
-            <h2>Investigative Reporting</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Lyari Youth Center: A Safe Haven in Karachi's Most Violent Slum</a>
-                    </div>
-                    <div class="publication-venue">The Guardian</div>
-                    <p class="publication-excerpt">In Lyari, a slum notorious for violence, Mehr Ghar offers young people a safe place for education and community.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Pakistan's Enforced Disappearances Crisis</a>
-                    </div>
-                    <div class="publication-venue">Kontinentalist</div>
-                    <p class="publication-excerpt">Thousands are abducted by state forces and tortured in unknown locations across Pakistan. Winner, SOPA Award for Data Visualization.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">ActBlue's $6M+ Meta Spending Trails Only Trump and Harris</a>
-                    </div>
-                    <div class="publication-venue">Columbia Journalism Review</div>
-                    <p class="publication-excerpt">Analysis of the progressive 'newsroom's' unprecedented Meta advertising expenditures during election cycle.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">East Harlem's Free Bus Returns to Fare Collection</a>
-                    </div>
-                    <div class="publication-venue">The Uptowner</div>
-                    <p class="publication-excerpt">The only free bus in East Harlem reimposes fares after the state fails to renew the MTA's pilot program.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">CB9 Passes Universal Daylighting Resolution</a>
-                    </div>
-                    <div class="publication-venue">The Uptowner</div>
-                    <p class="publication-excerpt">CB9 becomes the city's 18th community board in New York City to pass a resolution supporting Universal Daylighting for pedestrian safety.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Opposition Grows to $8.7M Artificial Soccer Field</a>
-                    </div>
-                    <div class="publication-venue">Columbia News Service</div>
-                    <p class="publication-excerpt">An online petition opposing the controversial artificial soccer field has drawn over 3,000 signatures from local residents.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications">
-        <div class="container">
-            <h2>International Reporting</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Baloch Families March Against Enforced Disappearances</a>
-                    </div>
-                    <div class="publication-venue">New Lines Magazine</div>
-                    <p class="publication-excerpt">They were protesting against enforced disappearances and extrajudicial killings in Pakistan's remote Balochistan province.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Afghan Refugees Choose Death Over Deportation</a>
-                    </div>
-                    <div class="publication-venue">The New Humanitarian</div>
-                    <p class="publication-excerpt">'I'd rather die in Pakistan than go back to Afghanistan,' say refugees facing forced return to Taliban-controlled territory.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Food Insecurity Among Afghan Refugees</a>
-                    </div>
-                    <div class="publication-venue">The New Humanitarian</div>
-                    <p class="publication-excerpt">'We cook the same vegetables almost every day... and haven't had meat in months,' refugees describe dire conditions.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Deportation to Unknown Homeland</a>
-                    </div>
-                    <div class="publication-venue">New Lines Magazine</div>
-                    <p class="publication-excerpt">As 'unauthorized' refugees are forced across the border, many lament being sent to a country they know nothing about.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Flood-Resilient Housing Design in Pakistan</a>
-                    </div>
-                    <div class="publication-venue">The Third Pole</div>
-                    <p class="publication-excerpt">As millions rebuild after devastating 2022 floods, an architect's innovative model for flood-resilient homes shows the way forward.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About</h2>
-            <div class="about-content">
-                <p>I'm a data journalist and reporter based in New York City with a Master's degree in Data Journalism from Columbia University. I focus on stories that use data to illuminate human rights issues, climate change impacts, and political developments.</p>
-                
-                <p>My work has appeared in international publications including The Guardian, New Lines Magazine, The New Humanitarian, and The Diplomat. I specialize in combining traditional reporting methods with data analysis to uncover stories from marginalized communities.</p>
-                
-                <p>In 2024, I was honored to be selected as a finalist for the Thomson Foundation's Young Journalist Award. My investigative piece on enforced disappearances in Balochistan for Kontinentalist received the SOPA Award for excellence in data-driven journalism.</p>
-                
-                <p>I'm passionate about using both traditional reporting methods and data analysis to uncover stories that might otherwise remain untold, particularly from marginalized communities. My technical skills include Python, R, data visualization, mapping with Mapbox, and responsive web design for storytelling projects.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="awards">
-        <div class="container">
-            <h2>Recognition</h2>
-            <div class="awards-list">
-                <div class="award-item">
-                    <div class="award-title">Thomson Foundation Young Journalist Award - Finalist</div>
-                    <div class="award-org">Thomson Foundation (2024)</div>
-                    <p class="award-description">Recognized by the Thomson Foundation for outstanding journalistic work as an emerging talent.</p>
-                </div>
-
-                <div class="award-item">
-                    <div class="award-title">ICRC Humanitarian Reporting Award</div>
-                    <div class="award-org">International Committee of the Red Cross</div>
-                    <p class="award-description">Honored at the 7th International Committee of the Red Cross Humanitarian Reporting Awards.</p>
-                </div>
-
-                <div class="award-item">
-                    <div class="award-title">Solutions Journalism Network Recognition</div>
-                    <div class="award-org">Solutions Journalism Network</div>
-                    <p class="award-description">Recognized for excellence in solutions-focused journalism that highlights responses to social problems.</p>
-                </div>
-
-                <div class="award-item">
-                    <div class="award-title">SOPA Award for Data Visualization</div>
-                    <div class="award-org">Society of Publishers in Asia</div>
-                    <p class="award-description">Awarded for data-driven piece on enforced disappearances in Balochistan for Kontinentalist. Judges praised it as "A comprehensive explanatory piece that makes great use of graphics to lay out the history of the Balochistan conflict."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Climate Justice Researcher & Writer</title>
-    <style>
-        :root {
-            --color-primary: #1a7f8e;
-            --color-text: #2c3e50;
-            --color-text-light: #7f8c8d;
-            --color-bg: #ffffff;
-            --color-bg-secondary: #f8f9fa;
-            --color-border: #e1e8ed;
-            --color-accent: #e74c3c;
-            --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            --font-heading: 'Georgia', serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
             font-family: var(--font-body);
-            color: var(--color-text);
-            line-height: 1.6;
-            background-color: var(--color-bg);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
         }
 
-        /* Header */
-        header {
-            background-color: var(--color-bg);
-            border-bottom: 1px solid var(--color-border);
-            padding: 60px 0;
-            text-align: center;
+        textarea {
+            resize: vertical;
+            min-height: 150px;
         }
 
-        h1 {
-            font-family: var(--font-heading);
-            font-size: 2.5rem;
-            color: var(--color-text);
-            margin-bottom: 15px;
-            font-weight: 400;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--color-text-light);
-            max-width: 700px;
-            margin: 0 auto 20px;
-            line-height: 1.8;
-        }
-
-        .header-links {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .header-links a {
-            color: var(--color-primary);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .header-links a:hover {
-            color: var(--color-accent);
-        }
-
-        /* Navigation */
-        nav {
-            background-color: var(--color-bg-secondary);
-            border-bottom: 1px solid var(--color-border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            padding: 15px 0;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: var(--color-text);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--color-primary);
-        }
-
-        /* Sections */
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        h2 {
-            font-family: var(--font-heading);
-            font-size: 2rem;
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: 400;
-        }
-
-        /* Featured Work Grid */
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .work-item {
-            background: var(--color-bg);
-            border: 1px solid var(--color-border);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .work-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .work-image {
-            width: 100%;
-            height: 200px;
-            background-color: var(--color-bg-secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-text-light);
-            font-size: 0.9rem;
-        }
-
-        .work-content {
-            padding: 25px;
-        }
-
-        .work-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--color-text);
-        }
-
-        .work-description {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .work-meta {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-        }
-
-        .work-tag {
-            background-color: var(--color-bg-secondary);
-            padding: 4px 10px;
+        .submit-btn {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 12px 30px;
+            border: none;
             border-radius: 4px;
-            font-size: 0.85rem;
-            color: var(--color-text);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .work-link {
+        .submit-btn:hover {
+            background-color: #156772;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--color-text-light);
+        }
+
+        .contact-info a {
             color: var(--color-primary);
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
         }
 
-        .work-link:hover {
+        .contact-info a:hover {
             color: var(--color-accent);
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .about-content p {
-            margin-bottom: 20px;
-        }
-
-        /* Awards Section */
-        .awards-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .award-item {
-            border-left: 3px solid var(--color-primary);
-            padding: 20px 0 20px 30px;
-            margin-bottom: 30px;
-        }
-
-        .award-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--color-text);
-        }
-
-        .award-org {
-            color: var(--color-primary);
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        .award-description {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* Publications List */
-        .publications-list {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .publication-item {
-            padding: 20px 0;
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        .publication-item:last-child {
-            border-bottom: none;
-        }
-
-        .publication-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .publication-title a {
-            color: var(--color-text);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .publication-title a:hover {
-            color: var(--color-primary);
-        }
-
-        .publication-venue {
-            color: var(--color-primary);
-            font-weight: 500;
-            font-size: 0.95rem;
-            margin-bottom: 5px;
-        }
-
-        .publication-excerpt {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            line-height: 1.6;
         }
 
         /* Footer */
@@ -935,10 +301,6 @@
                 padding: 12px 0;
             }
 
-            .work-grid {
-                grid-template-columns: 1fr;
-            }
-
             section {
                 padding: 40px 0;
             }
@@ -948,89 +310,23 @@
 <body>
     <header>
         <div class="container">
-            <h1>Your Name</h1>
-            <p class="subtitle">Climate justice researcher and policy analyst based in New York City. MA in Climate and Society from Columbia University. Investigating intersections of climate, caste, and environmental justice in the Global South.</p>
+            <h1>David Sathuluri</h1>
+            <p class="subtitle">Researcher and Writer based in New York City. Master's in Climate and Society from Columbia University. Work on human rights, caste/race, artificial intelligence, decolonial thought, climate justice, policy, and politics. Published in The Quint, Breakthrough News, Maktoob Media, Ambedkar Chronicle, Down to Earth, Convergence Magazine, Common Dreams, and Columbia University.</p>
             <div class="header-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="resume.pdf" target="_blank">Resume/CV</a>
+                <a href="mailto:david.sathuluri@columbia.edu">Email</a>
+                <a href="https://www.linkedin.com/in/david-sathuluri/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://linktr.ee/davidsathuluri" target="_blank" rel="noopener noreferrer">Links</a>
             </div>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#featured">Featured Work</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#awards">Recognition</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <section id="featured">
-        <div class="container">
-            <h2>Featured Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-image">Climate Justice Project</div>
-                    <div class="work-content">
-                        <h3 class="work-title">Climate-Caste Nexus in Indian Cities</h3>
-                        <p class="work-description">Investigative analysis examining how climate vulnerabilities disproportionately impact marginalized caste communities in urban India.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Climate Justice</span>
-                            <span class="work-tag">Caste Studies</span>
-                            <span class="work-tag">Policy Analysis</span>
-                        </div>
-                        <a href="#" class="work-link">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-image">Policy Research</div>
-                    <div class="work-content">
-                        <h3 class="work-title">Green Colonialism in Climate Finance</h3>
-                        <p class="work-description">Research exposing how international climate finance mechanisms perpetuate colonial patterns of debt and exploitation in the Global South.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Climate Finance</span>
-                            <span class="work-tag">Decolonial Theory</span>
-                            <span class="work-tag">Policy</span>
-                        </div>
-                        <a href="#" class="work-link">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-image">Investigative Journalism</div>
-                    <div class="work-content">
-                        <h3 class="work-title">State Violence Against Climate Activists</h3>
-                        <p class="work-description">Documentary investigation of surveillance and repression tactics used against environmental justice movements in South Asia.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Environmental Justice</span>
-                            <span class="work-tag">Human Rights</span>
-                            <span class="work-tag">Activism</span>
-                        </div>
-                        <a href="#" class="work-link">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-image">Academic Research</div>
-                    <div class="work-content">
-                        <h3 class="work-title">Urban Heat and Vulnerability in Global South Cities</h3>
-                        <p class="work-description">Data-driven analysis of heat vulnerability patterns in rapidly urbanizing cities across South Asia and their intersection with social inequality.</p>
-                        <div class="work-meta">
-                            <span class="work-tag">Climate Adaptation</span>
-                            <span class="work-tag">Urban Studies</span>
-                            <span class="work-tag">Data Analysis</span>
-                        </div>
-                        <a href="#" class="work-link">Read More →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="publications">
         <div class="container">
@@ -1038,82 +334,140 @@
             <div class="publications-list">
                 <div class="publication-item">
                     <div class="publication-title">
-                        <a href="#" target="_blank">The Climate-Caste Intersectionality Crisis</a>
+                        <a href="https://www.downtoearth.org.in/blog/climate-change/invisible-deaths-how-india-s-climate-crisis-abandons-its-sanitation-workers-98885" target="_blank">Invisible Deaths: How India's Climate Crisis Abandons Its Sanitation Workers</a>
                     </div>
-                    <div class="publication-venue">The Guardian</div>
-                    <p class="publication-excerpt">How climate change exacerbates existing caste-based inequalities in access to resources, adaptation, and resilience in South Asian communities.</p>
+                    <div class="publication-venue">Down To Earth</div>
+                    <p class="publication-excerpt">A deep analytical piece examining how climate change and caste intersect, creating lethal conditions for Dalit sanitation workers in India.</p>
+                </div>
+               <div class="publication-item">
+                    <div class="publication-title">
+                        <a href="https://www.thequint.com/opinion/india-caste-census-climate-justice-data-blindness" target="_blank">India's Climate Policies Fall Short Because They Refuse to See Caste</a>
+                    </div>
+                    <div class="publication-venue">The Quint</div>
+                    <p class="publication-excerpt">The article highlights how India's climate policies have historically ignored caste-based vulnerabilities, resulting in exclusion of marginalized groups from climate adaptation and disaster relief. It argues that the 2025 caste census offers a critical opportunity to integrate caste-disaggregated data for more equitable and effective climate justice interventions.</p>
                 </div>
 
+                div class="publication-item">
+                    <div class="publication-title">
+                        <a href="https://www.compiler.news/ai-climate-apartheid/" target="_blank">How to avoid climate apartheid fueled by A.I.</a>
+                    </div>
+                    <div class="publication-venue">The Compiler News</div>
+                    <p class="publication-excerpt">The article highlights how AI-driven climate solutions in New York City are reinforcing environmental and social inequalities, disproportionately harming marginalized communities. It advocates for inclusive AI governance, open data standards, universal broadband, and community-led initiatives to ensure climate justice and prevent a new form of climate apartheid.​
+
+
+
+
+
+
+
+</p>
+                </div>
+
+                
+
+                
+                
+                
+                
+                
+                
+                
                 <div class="publication-item">
                     <div class="publication-title">
-                        <a href="#" target="_blank">Debt Colonialism and Green Finance</a>
+                        <a href="https://www.commondreams.org/opinion/environmental-justice-ai" target="_blank">If AI Knows the Planet Is Dying, Why Can’t It Tell Us Who’s Drowning?</a>
                     </div>
                     <div class="publication-venue">Common Dreams</div>
-                    <p class="publication-excerpt">Examining how international climate finance mechanisms entrench debt dependency and limit policy autonomy in developing nations.</p>
+                    <p class="publication-excerpt">In this article, I dealt with the limitations of AI in planetary health monitoring, emphasizing the need to embed environmental justice and equity into AI systems to ensure they protect vulnerable communities and do not perpetuate existing power imbalances. It highlights issues such as proprietary data, lack of local community involvement, and the need for integrating social vulnerability indicators alongside environmental data. The article calls for co-designed, just, and inclusive AI frameworks for effective and equitable climate action</p>
+                </div>
+             
+                <div class="publication-item">
+                    <div class="publication-title">
+                        <a href="https://morningsidepost.com/articles/2025/10/29/reading-columbias-colonial-campus-how-architecture-shapes-student-consciousness" target="_blank">Reading Columbia’s Colonial Campus: How Architecture Shapes Student Consciousness</a>
+                    </div>
+                    <div class="publication-venue">The MorningSide Post, SIPA|Columbia </div>
+                    <p class="publication-excerpt">The artilce is exploring on how Columbia University’s campus architecture embodies and perpetuates colonial and imperial narratives that shape student consciousness, reinforcing Western European intellectual authority while marginalizing Indigenous and non-Western knowledge. The article examines the symbolic power of architectural design in maintaining social hierarchies, and highlights student protests that challenge and rewrite these spatial narratives as acts of decolonization and resistance. It calls for developing "landscape literacy" to critically engage with and transform how educational spaces communicate power and knowledge.</p>
                 </div>
 
                 <div class="publication-item">
                     <div class="publication-title">
-                        <a href="#" target="_blank">Surveillance Capitalism and Environmental Activism</a>
+                        <a href="https://breakthroughnews.org/drop-tcs-the-new-york-marathons-hidden-ties-to-genocide-in-gaza/" target="_blank">Running on Blood Money: The New York Marathon’s Hidden Ties to Genocide in Gaza </a>
                     </div>
-                    <div class="publication-venue">The Intercept</div>
-                    <p class="publication-excerpt">Investigation into state surveillance technologies deployed against climate justice movements in India.</p>
+                    <div class="publication-venue">The BreakThrough News</div>
+                    <p class="publication-excerpt">The article uncovers and critiques the corporate sponsorship of a major athletic event by a company deeply entangled in enabling state violence and calls for collective action to sever these ties.</p>
+                </div>
+             <div class="publication-item">
+                    <div class="publication-title">
+                        <a href="https://maktoobmedia.com/opinion/how-gaza-became-laboratory-for-digital-totalitarianism/" target="_blank">How Gaza became laboratory for digital totalitarianism</a>
+                    </div>
+                    <div class="publication-venue">Maktoob Media</div>
+                    <p class="publication-excerpt">The article examines how Gaza is used as a testing ground for Israeli digital surveillance and control technologies, creating a system of digital totalitarianism that represses Palestinian freedoms. It highlights the global risks of militarized digital infrastructures normalized through such conflict zones</p>
+                </div>
+
+
+
+                
+                <div class="publication-item">
+                    <div class="publication-title">
+                        <a href="https://theambedkarianchronicle.in/caste-and-climate-change/caste-climate-and-justice-reimagining-environmentalism-in-india-through-ambedkarite-praxis/" target="_blank">Caste, Climate, and Justice: Reimagining Environmentalism in India Through Ambedkarite Praxis</a>
+                    </div>
+                    <div class="publication-venue">The Ambedkarian Chronicle</div>
+                    <p class="publication-excerpt">Exploring how environmental justice in India must be understood through the lens of caste inequality and Ambedkarite frameworks.</p>
                 </div>
 
                 <div class="publication-item">
                     <div class="publication-title">
-                        <a href="#" target="_blank">AI Ethics and Climate Justice in the Global South</a>
+                        <a href="https://justicenetwork.climate.columbia.edu/news/turning-point-how-nycs-2025-mayoral-election-could-redefine-climate-justice-and-inequality" target="_blank">A Turning Point? How NYC's 2025 Mayoral Election Could Redefine Climate Justice and Inequality</a>
                     </div>
-                    <div class="publication-venue">Breakthrough News</div>
-                    <p class="publication-excerpt">Analysis of how artificial intelligence applications in climate adaptation reproduce colonial knowledge hierarchies.</p>
+                    <div class="publication-venue">Environmental and Climate Justice Project, Columbia University</div>
+                    <p class="publication-excerpt">Analysis of how New York City's mayoral race presents opportunities to address climate justice and urban inequality.</p>
                 </div>
 
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="#" target="_blank">Corporate Complicity in Environmental Harm</a>
-                    </div>
-                    <div class="publication-venue">Jacobin</div>
-                    <p class="publication-excerpt">Investigative report on how multinational corporations leverage climate policy to extract resources while displacing vulnerable communities.</p>
-                </div>
-            </div>
-        </div>
+              
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About</h2>
             <div class="about-content">
-                <p>I'm a climate justice researcher and policy analyst based in New York City, currently working as a Research Assistant at Columbia University's Lamont-Doherty Earth Observatory and Climate School. I hold an MA in Climate and Society from Columbia University.</p>
+                <p>I'm a researcher and writer based in New York City, currently pursuing a Master of Arts in Climate and Society at Columbia University's Climate School. My work focuses on the intersections of climate justice, caste inequality, human rights, and decolonial thought.</p>
                 
-                <p>My research focuses on the intersections of climate change, caste inequality, and environmental justice in the Global South, with particular emphasis on South Asia. I investigate how climate vulnerabilities are shaped by existing social hierarchies, and how climate adaptation and finance mechanisms often reproduce colonial patterns of exploitation.</p>
+                <p>As a Research Assistant at Columbia University's Lamont-Doherty Earth Observatory and Climate School, I investigate how climate vulnerabilities are shaped by existing social hierarchies, particularly examining the climate-caste nexus in South Asian contexts. I also serve on the Review Committee at Columbia's Institute for the Study of Human Rights.</p>
                 
-                <p>As a freelance writer and investigative journalist, my work has appeared in publications including The Guardian, The Intercept, Common Dreams, Jacobin, The Nation, and Middle East Eye. I write about climate policy, environmental justice, state violence against activists, and the political economy of climate finance.</p>
+                <p>My writing and research appear in publications including Down To Earth, The Ambedkarian Chronicle, Columbia Climate School, The Quint, Breakthrough News, Maktoob Media, Convergence Magazine, and Common Dreams. I write about climate policy, environmental justice, artificial intelligence ethics, and the political economy of climate finance from Global South perspectives.</p>
                 
-                <p>I'm passionate about bridging academic research with activist-oriented journalism to amplify marginalized voices and challenge dominant narratives in climate discourse. My work employs rigorous fact-checking, data analysis, and decolonial theoretical frameworks to expose power dynamics in environmental governance.</p>
+                <p>Previously, I served as Project Consultant for the Global Forum of Communities Discriminated on Work & Descent (GFoD), researching caste-based discrimination and climate vulnerability. I hold a degree from the University of Delhi and am a Fellow working at the intersection of inclusive climate action, AI, and human rights.</p>
+                
+                <p>My approach bridges rigorous academic research with activist-oriented journalism, employing decolonial theoretical frameworks to challenge dominant narratives in climate discourse and amplify marginalized voices in environmental governance.</p>
             </div>
         </div>
     </section>
 
-    <section id="awards">
+    <section id="contact">
         <div class="container">
-            <h2>Recognition</h2>
-            <div class="awards-list">
-                <div class="award-item">
-                    <div class="award-title">Reductarian Fellowship</div>
-                    <div class="award-org">Reductarian Foundation</div>
-                    <p class="award-description">Selected for fellowship supporting research on sustainable food systems and climate justice intersections.</p>
-                </div>
-
-                <div class="award-item">
-                    <div class="award-title">Climate Research Grant</div>
-                    <div class="award-org">Columbia Climate School</div>
-                    <p class="award-description">Awarded research funding for investigating climate adaptation vulnerabilities in South Asian urban contexts.</p>
-                </div>
-
-                <div class="award-item">
-                    <div class="award-title">Environmental Justice Award</div>
-                    <div class="award-org">Various Organizations</div>
-                    <p class="award-description">Recognition for contributions to climate justice reporting and policy analysis highlighting Global South perspectives.</p>
+            <h2>Get in Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>Or reach me directly at <a href="mailto:david.sathuluri@columbia.edu">david.sathuluri@columbia.edu</a></p>
+                    <p>Connect on <a href="https://www.linkedin.com/in/david-sathuluri/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                 </div>
             </div>
         </div>
@@ -1122,14 +476,50 @@
     <footer>
         <div class="container">
             <div class="footer-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:david.sathuluri@columbia.edu">Email</a>
+                <a href="https://www.linkedin.com/in/david-sathuluri/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://linktr.ee/davidsathuluri" target="_blank" rel="noopener noreferrer">All Links</a>
+                <a href="https://davidsathuluri.journoportfolio.com" target="_blank" rel="noopener noreferrer">Portfolio</a>
             </div>
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 David Sathuluri. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:david.sathuluri@columbia.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Optional: Show success message
+            alert('Opening your email client...');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-// "Add portfolio website"
