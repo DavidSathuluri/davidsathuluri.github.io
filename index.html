@@ -3,523 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Sathuluri - Researcher & Writer</title>
+    <title>David Sathuluri | Scholar & Advocate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #1a7f8e;
-            --color-text: #2c3e50;
-            --color-text-light: #7f8c8d;
-            --color-bg: #ffffff;
-            --color-bg-secondary: #f8f9fa;
-            --color-border: #e1e8ed;
-            --color-accent: #e74c3c;
-            --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            --font-heading: 'Georgia', serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --parchment: #FCF8F3;
+            --lapis: #1A3A6D;
+            --saffron: #E2B13C;
+            --pomegranate: #9B2C2C;
+            --deep-teal: #0D2B3E;
         }
 
         body {
-            font-family: var(--font-body);
-            color: var(--color-text);
-            line-height: 1.6;
-            background-color: var(--color-bg);
+            background-color: var(--parchment);
+            color: #2D2D2D;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.7;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
+        /* Hero Section with Persian Motif Overlay */
         header {
-            background-color: var(--color-bg);
-            border-bottom: 1px solid var(--color-border);
-            padding: 60px 0;
-            text-align: center;
+            padding: 120px 10%;
+            background: var(--lapis);
+            color: white;
+            border-bottom: 10px solid var(--saffron);
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/p6.png'); /* Geometric texture */
+            opacity: 0.15;
+        }
+
+        .tagline {
+            color: var(--saffron);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.85rem;
+            position: relative;
         }
 
         h1 {
-            font-family: var(--font-heading);
-            font-size: 2.5rem;
-            color: var(--color-text);
-            margin-bottom: 15px;
-            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 10px 0;
+            position: relative;
         }
 
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--color-text-light);
-            max-width: 800px;
-            margin: 0 auto 20px;
-            line-height: 1.8;
+        /* Research Section */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
         }
 
-        .header-links {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .header-links a {
-            color: var(--color-primary);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .header-links a:hover {
-            color: var(--color-accent);
-        }
-
-        /* Navigation */
-        nav {
-            background-color: var(--color-bg-secondary);
-            border-bottom: 1px solid var(--color-border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            padding: 15px 0;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: var(--color-text);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--color-primary);
-        }
-
-        /* Sections */
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        h2 {
-            font-family: var(--font-heading);
-            font-size: 2rem;
+        .section-header {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--lapis);
             margin-bottom: 40px;
-            text-align: center;
-            font-weight: 400;
+            border-bottom: 1px solid var(--saffron);
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
-        /* About Section */
-        .about-content {
+        .bio-text {
+            font-size: 1.15rem;
             max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.05rem;
-            line-height: 1.8;
+            margin-bottom: 60px;
         }
 
-        .about-content p {
-            margin-bottom: 20px;
+        /* Publications Grid */
+        .pub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
         }
 
-        /* Publications List */
-        .publications-list {
-            max-width: 900px;
-            margin: 0 auto;
+        .pub-card {
+            background: white;
+            padding: 30px;
+            border-left: 6px solid var(--lapis);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: 0.3s;
         }
 
-        .publication-item {
-            padding: 20px 0;
-            border-bottom: 1px solid var(--color-border);
+        .pub-card:hover {
+            border-left-color: var(--pomegranate);
+            transform: scale(1.02);
         }
 
-        .publication-item:last-child {
-            border-bottom: none;
-        }
-
-        .publication-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .publication-title a {
-            color: var(--color-text);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .publication-title a:hover {
-            color: var(--color-primary);
-        }
-
-        .publication-venue {
-            color: var(--color-primary);
-            font-weight: 500;
-            font-size: 0.95rem;
-            margin-bottom: 5px;
-        }
-
-        .publication-excerpt {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            line-height: 1.6;
+        .pub-card h3 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            color: var(--deep-teal);
         }
 
         /* Contact Form */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
+        .contact-box {
+            background: var(--deep-teal);
+            color: white;
+            padding: 60px;
+            margin-top: 80px;
+            border-radius: 2px;
         }
 
         .form-group {
             margin-bottom: 20px;
         }
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--color-text);
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
+        input, textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid var(--color-border);
-            border-radius: 4px;
-            font-family: var(--font-body);
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none;
-            border-color: var(--color-primary);
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .submit-btn {
-            background-color: var(--color-primary);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--saffron);
             color: white;
-            padding: 12px 30px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        button {
+            background: var(--saffron);
+            color: var(--deep-teal);
             border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            font-weight: 500;
+            padding: 15px 40px;
+            font-weight: 700;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            text-transform: uppercase;
         }
 
-        .submit-btn:hover {
-            background-color: #156772;
-        }
-
-        .contact-info {
-            margin-top: 40px;
-            text-align: center;
-            color: var(--color-text-light);
-        }
-
-        .contact-info a {
-            color: var(--color-primary);
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            color: var(--color-accent);
-        }
-
-        /* Footer */
         footer {
-            background-color: var(--color-bg-secondary);
             text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: var(--color-primary);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--color-accent);
-        }
-
-        footer p {
-            color: var(--color-text-light);
+            padding: 60px;
+            background: #F0EAD6;
+            color: var(--lapis);
             font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            nav ul {
-                gap: 20px;
-                padding: 12px 0;
-            }
-
-            section {
-                padding: 40px 0;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>David Sathuluri</h1>
-            <p class="subtitle">Researcher and Writer based in New York City. Master's in Climate and Society from Columbia University. Work on human rights, caste/race, artificial intelligence, decolonial thought, climate justice, policy, and politics. Published in The Quint, Breakthrough News, Maktoob Media, Ambedkar Chronicle, Down to Earth, Convergence Magazine, Common Dreams, and Columbia University.</p>
-            <div class="header-links">
-                <a href="mailto:david.sathuluri@columbia.edu">Email</a>
-                <a href="https://www.linkedin.com/in/david-sathuluri/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://linktr.ee/davidsathuluri" target="_blank" rel="noopener noreferrer">Links</a>
-            </div>
-        </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+    <div class="tagline">Columbia University | AI & Climate Scholar</div>
+    <h1>David Sathuluri</h1>
+</header>
 
-    <section id="publications">
-        <div class="container">
-            <h2>Selected Publications</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://www.downtoearth.org.in/blog/climate-change/invisible-deaths-how-india-s-climate-crisis-abandons-its-sanitation-workers-98885" target="_blank">Invisible Deaths: How India's Climate Crisis Abandons Its Sanitation Workers</a>
-                    </div>
-                    <div class="publication-venue">Down To Earth</div>
-                    <p class="publication-excerpt">A deep analytical piece examining how climate change and caste intersect, creating lethal conditions for Dalit sanitation workers in India.</p>
-                </div>
-               <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://www.thequint.com/opinion/india-caste-census-climate-justice-data-blindness" target="_blank">India's Climate Policies Fall Short Because They Refuse to See Caste</a>
-                    </div>
-                    <div class="publication-venue">The Quint</div>
-                    <p class="publication-excerpt">The article highlights how India's climate policies have historically ignored caste-based vulnerabilities, resulting in exclusion of marginalized groups from climate adaptation and disaster relief. It argues that the 2025 caste census offers a critical opportunity to integrate caste-disaggregated data for more equitable and effective climate justice interventions.</p>
-                </div>
-
-                div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://www.compiler.news/ai-climate-apartheid/" target="_blank">How to avoid climate apartheid fueled by A.I.</a>
-                    </div>
-                    <div class="publication-venue">The Compiler News</div>
-                    <p class="publication-excerpt">The article highlights how AI-driven climate solutions in New York City are reinforcing environmental and social inequalities, disproportionately harming marginalized communities. It advocates for inclusive AI governance, open data standards, universal broadband, and community-led initiatives to ensure climate justice and prevent a new form of climate apartheid.​
-
-
-
-
-
-
-
-</p>
-                </div>
-
-                
-
-                
-                
-                
-                
-                
-                
-                
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://www.commondreams.org/opinion/environmental-justice-ai" target="_blank">If AI Knows the Planet Is Dying, Why Can’t It Tell Us Who’s Drowning?</a>
-                    </div>
-                    <div class="publication-venue">Common Dreams</div>
-                    <p class="publication-excerpt">In this article, I dealt with the limitations of AI in planetary health monitoring, emphasizing the need to embed environmental justice and equity into AI systems to ensure they protect vulnerable communities and do not perpetuate existing power imbalances. It highlights issues such as proprietary data, lack of local community involvement, and the need for integrating social vulnerability indicators alongside environmental data. The article calls for co-designed, just, and inclusive AI frameworks for effective and equitable climate action</p>
-                </div>
-             
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://morningsidepost.com/articles/2025/10/29/reading-columbias-colonial-campus-how-architecture-shapes-student-consciousness" target="_blank">Reading Columbia’s Colonial Campus: How Architecture Shapes Student Consciousness</a>
-                    </div>
-                    <div class="publication-venue">The MorningSide Post, SIPA|Columbia </div>
-                    <p class="publication-excerpt">The artilce is exploring on how Columbia University’s campus architecture embodies and perpetuates colonial and imperial narratives that shape student consciousness, reinforcing Western European intellectual authority while marginalizing Indigenous and non-Western knowledge. The article examines the symbolic power of architectural design in maintaining social hierarchies, and highlights student protests that challenge and rewrite these spatial narratives as acts of decolonization and resistance. It calls for developing "landscape literacy" to critically engage with and transform how educational spaces communicate power and knowledge.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://breakthroughnews.org/drop-tcs-the-new-york-marathons-hidden-ties-to-genocide-in-gaza/" target="_blank">Running on Blood Money: The New York Marathon’s Hidden Ties to Genocide in Gaza </a>
-                    </div>
-                    <div class="publication-venue">The BreakThrough News</div>
-                    <p class="publication-excerpt">The article uncovers and critiques the corporate sponsorship of a major athletic event by a company deeply entangled in enabling state violence and calls for collective action to sever these ties.</p>
-                </div>
-             <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://maktoobmedia.com/opinion/how-gaza-became-laboratory-for-digital-totalitarianism/" target="_blank">How Gaza became laboratory for digital totalitarianism</a>
-                    </div>
-                    <div class="publication-venue">Maktoob Media</div>
-                    <p class="publication-excerpt">The article examines how Gaza is used as a testing ground for Israeli digital surveillance and control technologies, creating a system of digital totalitarianism that represses Palestinian freedoms. It highlights the global risks of militarized digital infrastructures normalized through such conflict zones</p>
-                </div>
-
-
-
-                
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://theambedkarianchronicle.in/caste-and-climate-change/caste-climate-and-justice-reimagining-environmentalism-in-india-through-ambedkarite-praxis/" target="_blank">Caste, Climate, and Justice: Reimagining Environmentalism in India Through Ambedkarite Praxis</a>
-                    </div>
-                    <div class="publication-venue">The Ambedkarian Chronicle</div>
-                    <p class="publication-excerpt">Exploring how environmental justice in India must be understood through the lens of caste inequality and Ambedkarite frameworks.</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">
-                        <a href="https://justicenetwork.climate.columbia.edu/news/turning-point-how-nycs-2025-mayoral-election-could-redefine-climate-justice-and-inequality" target="_blank">A Turning Point? How NYC's 2025 Mayoral Election Could Redefine Climate Justice and Inequality</a>
-                    </div>
-                    <div class="publication-venue">Environmental and Climate Justice Project, Columbia University</div>
-                    <p class="publication-excerpt">Analysis of how New York City's mayoral race presents opportunities to address climate justice and urban inequality.</p>
-                </div>
-
-              
+<div class="container">
+    <section>
+        <h2 class="section-header">The Praxis</h2>
+        <p class="bio-text">
+            My work navigates the complex intersections of <strong>Artificial Intelligence</strong> and <strong>Climate Justice</strong>. 
+            By centering <em>Ambedkarite Environmentalism</em>, I challenge global policy frameworks to recognize 
+            the disproportionate technological and ecological burdens placed on marginalized communities. 
+            From the newsrooms of India to the research labs of New York, my focus remains on 
+            <strong>equity, governance, and human rights.</strong>
+        </p>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About</h2>
-            <div class="about-content">
-                <p>I'm a researcher and writer based in New York City, currently pursuing a Master of Arts in Climate and Society at Columbia University's Climate School. My work focuses on the intersections of climate justice, caste inequality, human rights, and decolonial thought.</p>
-                
-                <p>As a Research Assistant at Columbia University's Lamont-Doherty Earth Observatory and Climate School, I investigate how climate vulnerabilities are shaped by existing social hierarchies, particularly examining the climate-caste nexus in South Asian contexts. I also serve on the Review Committee at Columbia's Institute for the Study of Human Rights.</p>
-                
-                <p>My writing and research appear in publications including Down To Earth, The Ambedkarian Chronicle, Columbia Climate School, The Quint, Breakthrough News, Maktoob Media, Convergence Magazine, and Common Dreams. I write about climate policy, environmental justice, artificial intelligence ethics, and the political economy of climate finance from Global South perspectives.</p>
-                
-                <p>Previously, I served as Project Consultant for the Global Forum of Communities Discriminated on Work & Descent (GFoD), researching caste-based discrimination and climate vulnerability. I hold a degree from the University of Delhi and am a Fellow working at the intersection of inclusive climate action, AI, and human rights.</p>
-                
-                <p>My approach bridges rigorous academic research with activist-oriented journalism, employing decolonial theoretical frameworks to challenge dominant narratives in climate discourse and amplify marginalized voices in environmental governance.</p>
-            </div>
+    <h2 class="section-header">Selected Works</h2>
+    <div class="pub-grid">
+        <div class="pub-card">
+            <h3>"If AI Knows the Planet Is Dying..."</h3>
+            <p>A critical look at technological foresight and the ethical void in modern AI governance.</p>
+            <small>Featured in <strong>TechPolicy.Press</strong></small>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <p>Or reach me directly at <a href="mailto:david.sathuluri@columbia.edu">david.sathuluri@columbia.edu</a></p>
-                    <p>Connect on <a href="https://www.linkedin.com/in/david-sathuluri/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                </div>
-            </div>
+        <div class="pub-card">
+            <h3>Climate Justice & Caste</h3>
+            <p>Advocating for a more inclusive environmentalism that accounts for historical social hierarchies.</p>
+            <small>Published in <strong>The Quint</strong></small>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="mailto:david.sathuluri@columbia.edu">Email</a>
-                <a href="https://www.linkedin.com/in/david-sathuluri/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://linktr.ee/davidsathuluri" target="_blank" rel="noopener noreferrer">All Links</a>
-                <a href="https://davidsathuluri.journoportfolio.com" target="_blank" rel="noopener noreferrer">Portfolio</a>
-            </div>
-            <p>&copy; 2025 David Sathuluri. All rights reserved.</p>
+        <div class="pub-card">
+            <h3>Circular Economy Insights</h3>
+            <p>Bridging the gap between sustainable waste management and digital innovation.</p>
+            <small>Columbia University Research</small>
         </div>
-    </footer>
+    </div>
 
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Create mailto link
-            const mailtoLink = `mailto:david.sathuluri@columbia.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Optional: Show success message
-            alert('Opening your email client...');
-            
-            // Reset form
-            this.reset();
-        });
+    <div class="contact-box">
+        <h2 style="font-family: 'Playfair Display', serif; color: var(--saffron);">Get in Touch</h2>
+        <p>I am available for speaking engagements, policy consultations, and research collaborations.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </div>
+</div>
 
-        // Smooth scroll for navigation
-        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
+<footer>
+    &copy; 2026 David Sathuluri. <br>
+    <em>Rooted in Justice. Guided by Evidence.</em>
+</footer>
+
 </body>
 </html>
