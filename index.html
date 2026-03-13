@@ -1,210 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Sathuluri | Scholar & Advocate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --parchment: #FCF8F3;
-            --lapis: #1A3A6D;
-            --saffron: #E2B13C;
-            --pomegranate: #9B2C2C;
-            --deep-teal: #0D2B3E;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Sathuluri | Research</title>
 
-        body {
-            background-color: var(--parchment);
-            color: #2D2D2D;
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            line-height: 1.7;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-        /* Hero Section with Persian Motif Overlay */
-        header {
-            padding: 120px 10%;
-            background: var(--lapis);
-            color: white;
-            border-bottom: 10px solid var(--saffron);
-            position: relative;
-        }
+<style>
 
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: url('https://www.transparenttextures.com/patterns/p6.png'); /* Geometric texture */
-            opacity: 0.15;
-        }
+body{
+font-family: 'Inter', sans-serif;
+margin:0;
+background:#ffffff;
+color:#1f2937;
+line-height:1.6;
+}
 
-        .tagline {
-            color: var(--saffron);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 0.85rem;
-            position: relative;
-        }
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            margin: 10px 0;
-            position: relative;
-        }
+header{
+border-bottom:1px solid #e5e7eb;
+padding-bottom:20px;
+margin-bottom:40px;
+}
 
-        /* Research Section */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
+nav a{
+margin-right:20px;
+text-decoration:none;
+color:#374151;
+font-weight:500;
+}
 
-        .section-header {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            color: var(--lapis);
-            margin-bottom: 40px;
-            border-bottom: 1px solid var(--saffron);
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+nav a:hover{
+color:#2563eb;
+}
 
-        .bio-text {
-            font-size: 1.15rem;
-            max-width: 800px;
-            margin-bottom: 60px;
-        }
+h1{
+font-size:36px;
+margin-bottom:5px;
+}
 
-        /* Publications Grid */
-        .pub-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
+.subtitle{
+color:#6b7280;
+margin-bottom:20px;
+}
 
-        .pub-card {
-            background: white;
-            padding: 30px;
-            border-left: 6px solid var(--lapis);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: 0.3s;
-        }
+section{
+margin-bottom:60px;
+}
 
-        .pub-card:hover {
-            border-left-color: var(--pomegranate);
-            transform: scale(1.02);
-        }
+.research-card{
+border-left:4px solid #2563eb;
+padding-left:15px;
+margin-bottom:20px;
+}
 
-        .pub-card h3 {
-            font-family: 'Playfair Display', serif;
-            margin-top: 0;
-            color: var(--deep-teal);
-        }
+.blog-post{
+margin-bottom:15px;
+}
 
-        /* Contact Form */
-        .contact-box {
-            background: var(--deep-teal);
-            color: white;
-            padding: 60px;
-            margin-top: 80px;
-            border-radius: 2px;
-        }
+footer{
+border-top:1px solid #e5e7eb;
+padding-top:20px;
+color:#6b7280;
+font-size:14px;
+}
 
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid var(--saffron);
-            color: white;
-            font-family: 'Inter', sans-serif;
-        }
-
-        button {
-            background: var(--saffron);
-            color: var(--deep-teal);
-            border: none;
-            padding: 15px 40px;
-            font-weight: 700;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-
-        footer {
-            text-align: center;
-            padding: 60px;
-            background: #F0EAD6;
-            color: var(--lapis);
-            font-size: 0.9rem;
-        }
-    </style>
+</style>
 </head>
+
 <body>
 
+<div class="container">
+
 <header>
-    <div class="tagline">Columbia University | AI & Climate Scholar</div>
-    <h1>David Sathuluri</h1>
+
+<h1>David Sathuluri</h1>
+
+<p class="subtitle">
+Researcher | Climate Justice | Technology & Society
+</p>
+
+<nav>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#writing">Writing</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
-<div class="container">
-    <section>
-        <h2 class="section-header">The Praxis</h2>
-        <p class="bio-text">
-            My work navigates the complex intersections of <strong>Artificial Intelligence</strong> and <strong>Climate Justice</strong>. 
-            By centering <em>Ambedkarite Environmentalism</em>, I challenge global policy frameworks to recognize 
-            the disproportionate technological and ecological burdens placed on marginalized communities. 
-            From the newsrooms of India to the research labs of New York, my focus remains on 
-            <strong>equity, governance, and human rights.</strong>
-        </p>
-    </section>
 
-    <h2 class="section-header">Selected Works</h2>
-    <div class="pub-grid">
-        <div class="pub-card">
-            <h3>"If AI Knows the Planet Is Dying..."</h3>
-            <p>A critical look at technological foresight and the ethical void in modern AI governance.</p>
-            <small>Featured in <strong>TechPolicy.Press</strong></small>
-        </div>
-        <div class="pub-card">
-            <h3>Climate Justice & Caste</h3>
-            <p>Advocating for a more inclusive environmentalism that accounts for historical social hierarchies.</p>
-            <small>Published in <strong>The Quint</strong></small>
-        </div>
-        <div class="pub-card">
-            <h3>Circular Economy Insights</h3>
-            <p>Bridging the gap between sustainable waste management and digital innovation.</p>
-            <small>Columbia University Research</small>
-        </div>
-    </div>
+<section id="about">
 
-    <div class="contact-box">
-        <h2 style="font-family: 'Playfair Display', serif; color: var(--saffron);">Get in Touch</h2>
-        <p>I am available for speaking engagements, policy consultations, and research collaborations.</p>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <input type="text" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <textarea rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit">Send Inquiry</button>
-        </form>
-    </div>
+<h2>About</h2>
+
+<p>
+David Sathuluri is a researcher working at the intersection of climate change, justice, and technology. His work explores how climate governance interacts with social inequality, focusing on caste, race, and structural marginalization.
+</p>
+
+<p>
+He holds a Master's degree in Climate and Society from Columbia University and works on interdisciplinary approaches to climate policy, urban resilience, and equitable technological transitions.
+</p>
+
+</section>
+
+
+<section id="research">
+
+<h2>Research Areas</h2>
+
+<div class="research-card">
+<strong>Climate Justice</strong>
+<p>Examining inequalities embedded within climate governance and environmental policy.</p>
 </div>
 
+<div class="research-card">
+<strong>Technology & Climate Governance</strong>
+<p>Studying how AI and emerging technologies shape climate decision-making.</p>
+</div>
+
+<div class="research-card">
+<strong>Urban Climate Futures</strong>
+<p>Research on resilience, climate migration, and urban vulnerability.</p>
+</div>
+
+<div class="research-card">
+<strong>Circular Economy</strong>
+<p>Exploring sustainable systems and green financing strategies for cities.</p>
+</div>
+
+</section>
+
+
+<section id="writing">
+
+<h2>Writing & Essays</h2>
+
+<div class="blog-post">
+<strong>Climate Justice and the Future of Urban Governance</strong>
+<p>Essay exploring climate adaptation and justice in rapidly urbanizing regions.</p>
+</div>
+
+<div class="blog-post">
+<strong>AI and Climate Policy</strong>
+<p>Examining the risks and opportunities of artificial intelligence in climate governance.</p>
+</div>
+
+<div class="blog-post">
+<strong>Climate Inequality and Structural Power</strong>
+<p>Analysis of how social hierarchies influence climate vulnerability.</p>
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: your-email@example.com</p>
+
+<p>LinkedIn: linkedin.com/in/davidsathuluri</p>
+
+</section>
+
+
 <footer>
-    &copy; 2026 David Sathuluri. <br>
-    <em>Rooted in Justice. Guided by Evidence.</em>
+
+<p>© 2026 David Sathuluri</p>
+
 </footer>
+
+</div>
 
 </body>
 </html>
